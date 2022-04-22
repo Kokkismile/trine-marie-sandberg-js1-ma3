@@ -15,7 +15,10 @@ async function apiCall() {
         for (i = 0; i < 8; i++){
             console.log([returnJson.results[i]])
 
-
+            htmlContainer.innerHTML += `<div><h2>${[returnJson.results[i].name]}</h2>
+                                       <p>Rating: ${[returnJson.results[i].rating]}</p>
+                                       <p>Number of tags: ${[returnJson.results[i].tags.length]}</p>
+                                       </div>`
         }
 
         } catch (error) {
