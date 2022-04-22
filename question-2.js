@@ -15,7 +15,7 @@ async function apiCall() {
         for (i = 0; i < 8; i++){
             console.log([returnJson.results[i]])
 
-            htmlContainer.innerHTML += `<div><h2>${[returnJson.results[i].name]}</h2>
+            htmlContainer.innerHTML += `<div class="game-container"><h2>${[returnJson.results[i].name]}</h2>
                                        <p>Rating: ${[returnJson.results[i].rating]}</p>
                                        <p>Number of tags: ${[returnJson.results[i].tags.length]}</p>
                                        </div>`
@@ -30,3 +30,14 @@ async function apiCall() {
 
 
 apiCall()
+
+const errorhandling = document.querySelector(".success-error-message");
+
+try {
+    getSomething();
+    errorhandling.innerHTML = displaySuccess("Success!");
+} catch(error) {
+    console.log("ERROR:", error);
+    //prints this message to page using premade componments and styling.
+    errorhandling.innerHTML = displayError("Error");
+}

@@ -1,0 +1,24 @@
+.game-container {
+    margin: 1rem;
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 5%;
+}
+
+.error {
+    background-color: rgb(90, 25, 25);
+    padding: 1rem;
+    width: fit-content;
+    color: #fff;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
+
+.success {
+    background-color: rgb(24, 75, 19);
+    padding: 1rem;
+    width: fit-content;
+    color: #fff;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
