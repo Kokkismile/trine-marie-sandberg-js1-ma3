@@ -5,7 +5,7 @@ const apiUrl = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&orderi
 
 htmlContainer = document.querySelector(".container");
 const message = document.querySelector(".message");
-message.innerHTML = `<p class="loading">LOADING...</p>`
+message.innerHTML = `<p class="loading">LOADING...</p>`;
 
 async function apiCall() {
 
@@ -32,4 +32,4 @@ async function apiCall() {
     
 };
 
-apiCall()
+apiCall();
