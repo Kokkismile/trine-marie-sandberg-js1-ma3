@@ -2,4 +2,5 @@
 
 const getRemainder = (a, b) => a % b;
 
-console.log(getRemainder(1, 2));
+const result = getRemainder(1, 2);
+//console.log(getRemainder(1, 2));
