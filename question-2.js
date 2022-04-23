@@ -18,9 +18,9 @@ async function apiCall() {
 
         for (i = 0; i < 8; i++){
 
-            htmlContainer.innerHTML += `<div class="game-container"><h2>${[returnJson.results[i].name]}</h2>
-                                       <p>Rating: ${[returnJson.results[i].rating]}</p>
-                                       <p>Number of tags: ${[returnJson.results[i].tags.length]}</p>
+            htmlContainer.innerHTML += `<div class="game-container"><h2>${returnJson.results[i].name}</h2>
+                                       <p>Rating: ${returnJson.results[i].rating}</p>
+                                       <p>Number of tags: ${returnJson.results[i].tags.length}</p>
                                        </div>`
         }
 
